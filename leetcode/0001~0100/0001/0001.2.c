@@ -1,4 +1,4 @@
-// hash - 89.46%
+// hash - 92.68%
 
 #define SEED 92083
 
@@ -30,6 +30,10 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         hashValue[j] = targetNum;
         hashIndex[j] = i;
     }
+
+    free(hashKey);
+    free(hashValue);
+    free(hashIndex);
 
     return result;
 }
