@@ -24,19 +24,3 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
         return (double)(a + b) / 2.0;
     }
 }
-
-int main() {
-    int in11[2] = {1, 3}, in12[1] = {2};
-    double out1 = findMedianSortedArrays(in11, 2, in12, 1);
-    printf("%f\n", out1);
-    int in21[2] = {1, 2}, in22[2] = {3, 4};
-    double out2 = findMedianSortedArrays(in21, 2, in22, 2);
-    printf("%f\n", out2);
-    int *in31 = NULL, *in32 = NULL;
-    double out3 = findMedianSortedArrays(in31, 0, in32, 0);
-    printf("%f\n", out3);
-    int *in41 = NULL, in42[1] = {1};
-    double out4 = findMedianSortedArrays(in41, 0, in42, 1);
-    printf("%f\n", out4);
-    return 0;
-}
